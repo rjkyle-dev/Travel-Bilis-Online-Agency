@@ -23,7 +23,7 @@ const App = () => {
   }, []);
   return (
     <>
-      <BrowserRouter basename="/travelbilis">
+      <BrowserRouter basename="/Travel-Bilis-Online-Agency">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
