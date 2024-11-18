@@ -8,22 +8,23 @@ const Hero = () => {
       <div className="h-full flex justify-center items-center p-4 bg-primary/10">
         <div className="container grid grid-cols-1 gap-4">
           <div className="text-white">
-            <h1 data-aos="fade-up" data-aos-delay="100"  className=" title font-bold text-center text-9xl">
+            <h1
+              // data-aos="fade-up"
+              data-aos-delay="100"
+              className=" title font-bold text-center mt-[-1em] text-6xl sm:first-letter:text-9xl md:text-9xl lg:text-9xl xl:text-9xl ">
               Travel Bilis
             </h1>
             <p
               data-aos="fade-up"
               data-aos-delay="300"
-              className="font-bold text-3xl"
-            >
+              className="font-bold text-3xl">
               Search Your Destination
             </p>
           </div>
           <div
             data-aos="fade-up"
             data-aos-delay="600"
-            className="space-y-4 bg-sky-600 rounded-md p-4 relative"
-          >
+            className="space-y-4 bg-sky-600 rounded-md p-4 relative">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 py-3">
               <div>
                 <label htmlFor="destination" className="">

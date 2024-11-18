@@ -58,11 +58,11 @@ const Navbar = ({ handleOrderPopup }) => {
         </div> */}
         <div className="container py-3 sm:py-0">
           <div className="flex justify-between items-center">
-            <div className="flex items-center gap-4  font-bold text-2xl ml-[-4em]">
+            <div className="flex items-center xl:gap-4  font-bold xl:text-2xl xl:ml-[-4em]">
               <Link to={"/"} onClick={() => window.scrollTo(0, 0)}>
                 <img src={Logo} alt="" className="h-16" />
               </Link>
-              <span className="title">Travel Bilis | Online Agency</span>
+              <span className="title">Online Agency</span>
             </div>
             <div className="hidden md:block ml-[-13em]">
               <ul className="flex items-center gap-6 font-semibold">
