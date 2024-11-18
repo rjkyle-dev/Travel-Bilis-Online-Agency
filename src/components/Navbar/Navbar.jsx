@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../assets/azul.png";
+import Logo from "../../assets/logos.png";
 import { NavLink, Link } from "react-router-dom";
 import { FaCaretDown } from "react-icons/fa";
 import ResponsiveMenu from "./ResponsiveMenu";
@@ -27,7 +27,7 @@ export const NavbarLinks = [
 const DropdownLinks = [
   {
     name: "Our Services",
-    link: "/#services",
+    link: "/",
   },
   {
     name: "Top Brands",
@@ -35,7 +35,7 @@ const DropdownLinks = [
   },
   {
     name: "Location",
-    link: "/#location",
+    link: "blogs",
   },
 ];
 
@@ -58,14 +58,14 @@ const Navbar = ({ handleOrderPopup }) => {
         </div> */}
         <div className="container py-3 sm:py-0">
           <div className="flex justify-between items-center">
-            <div className="flex items-center gap-4  font-bold text-2xl">
+            <div className="flex items-center gap-4  font-bold text-2xl ml-[-4em]">
               <Link to={"/"} onClick={() => window.scrollTo(0, 0)}>
                 <img src={Logo} alt="" className="h-16" />
               </Link>
-              <span className="">Azul Corp</span>
+              <span className="title">Travel Bilis | Online Agency</span>
             </div>
-            <div className="hidden md:block">
-              <ul className="flex items-center gap-6 ">
+            <div className="hidden md:block ml-[-13em]">
+              <ul className="flex items-center gap-6 font-semibold">
                 <li className="py-4">
                   <NavLink to="/" activeClassName="active">
                     Home
@@ -86,9 +86,9 @@ const Navbar = ({ handleOrderPopup }) => {
                     About
                   </NavLink>
                 </li>
-                <li className="group relative cursor-pointer">
+                {/* <li className="group relative cursor-pointer">
                   <a
-                    href="/#home"
+                    href="/"
                     className="flex h-[72px] items-center gap-[2px]"
                   >
                     Quick Links{" "}
@@ -110,7 +110,7 @@ const Navbar = ({ handleOrderPopup }) => {
                       ))}
                     </ul>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="flex items-center gap-4">

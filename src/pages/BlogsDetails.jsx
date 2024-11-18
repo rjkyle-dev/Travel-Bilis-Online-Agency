@@ -20,7 +20,7 @@ const BlogsDetails = (props) => {
       <div className="container ">
         <p className="text-slate-600 text-sm py-3">
           {" "}
-          written by {author} on {date}
+          {/* written by {author} on {date} */}
         </p>
         <h1 className="text-2xl font-semibold">{title}</h1>
         <p>{description}</p>

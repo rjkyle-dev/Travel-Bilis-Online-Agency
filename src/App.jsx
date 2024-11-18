@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import NoPage from "./pages/NoPage";
 import PlacesRoute from "./pages/PlacesRoute";
-import About from "./pages/About";
+// import About from "./pages/About";
 import BlogsDetails from "./pages/BlogsDetails";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,14 +23,14 @@ const App = () => {
   }, []);
   return (
     <>
-      <BrowserRouter basename="/Travel-Bilis-Online-Agency">
+      <BrowserRouter basename="/Travel-Bilis-Online-Agency/">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="blogs" element={<Blogs />} />
-            <Route path="blogs/:id" element={<BlogsDetails />} />
+            <Route path="blog/:id" element={<BlogsDetails />} />
             <Route path="best-places" element={<PlacesRoute />} />
-            <Route path="about" element={<About />} />
+            {/* <Route path="about" element={<About />} /> */}
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

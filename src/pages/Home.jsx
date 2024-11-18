@@ -1,13 +1,14 @@
 import React from "react";
 import Hero from "../components/Hero/Hero";
 import NatureVid from "../assets/video/main.mp4";
-import BlogsComp from "../components/Blogs/BlogsComp";
+import bg from "../assets/bg.png";
+// import BlogsComp from "../components/Blogs/BlogsComp";
 import Places from "../components/Places/Places";
-import Testimonial from "../components/Testimonial/Testimonial";
-import Banner from "../components/Banner/Banner";
-import BannerPic from "../components/BannerPic/BannerPic";
-import BannerImg from "../assets/cover-women.jpg";
-import Banner2 from "../assets/travel-cover2.jpg";
+// import Testimonial from "../components/Testimonial/Testimonial";
+// import Banner from "../components/Banner/Banner";
+// import BannerPic from "../components/BannerPic/BannerPic";
+// import BannerImg from "../assets/cover-women.jpg";
+// import Banner2 from "../assets/travel-cover2.jpg";
 import OrderPopup from "../components/OrderPopup/OrderPopup";
 
 const Home = () => {
@@ -20,21 +21,22 @@ const Home = () => {
     <>
       <div>
         <div className="h-[700px] relative">
-          <video
+          {/* <video
             autoPlay
             loop
             muted
             className="absolute right-0 top-0 w-full object-cover z-[-1]">
             <source src={NatureVid} type="video/mp4" />
-          </video>
+          </video> */}
+          <img src={bg} alt="" className="absolute right-0 top-0 w-full object-cover z-[-1]"></img>
           <Hero />
         </div>
         <Places handleOrderPopup={handleOrderPopup} />
-        <BannerPic img={BannerImg} />
-        <BlogsComp />
-        <Banner />
-        <BannerPic img={Banner2} />
-        <Testimonial />
+        {/* <BannerPic img={BannerImg} /> */}
+        {/* <BlogsComp /> */}
+        {/* <Banner /> */}
+        {/* <BannerPic img={Banner2} /> */}
+        {/* <Testimonial /> */}
         <OrderPopup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
       </div>
     </>

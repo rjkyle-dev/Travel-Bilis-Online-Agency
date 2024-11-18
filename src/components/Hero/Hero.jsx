@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="container grid grid-cols-1 gap-4">
           <div className="text-white">
             <h1 data-aos="fade-up" data-aos-delay="100"  className=" title font-bold text-center text-9xl">
-              TIDES
+              Travel Bilis
             </h1>
             <p
               data-aos="fade-up"
@@ -22,23 +22,23 @@ const Hero = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="600"
-            className="space-y-4 bg-black/20 rounded-md p-4 relative"
+            className="space-y-4 bg-sky-600 rounded-md p-4 relative"
           >
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 py-3">
               <div>
-                <label htmlFor="destination" className="opacity-70">
+                <label htmlFor="destination" className="">
                   Searh your Destination
                 </label>
                 <input
                   type="text"
                   name="destination"
                   id="destination"
-                  placeholder="Dubai"
+                  placeholder="Philippines"
                   className="w-full bg-gray-100 my-2 range accent-primary focus:outline-primary focus:outline outline-1 rounded-full p-2"
                 />
               </div>
               <div>
-                <label htmlFor="destination" className="opacity-70">
+                <label htmlFor="destination" className="">
                   Date
                 </label>
                 <input
@@ -49,10 +49,10 @@ const Hero = () => {
                 />
               </div>
               <div>
-                <label htmlFor="destination" className="opacity-70 block">
+                <label htmlFor="destination" className=" block">
                   <div className="w-full flex justify-between items-center">
                     <p>Max Price</p>
-                    <p className="font-bold text-xl">$ {priceValue}</p>
+                    <p className="font-bold text-xl">₱{priceValue}</p>
                   </div>
                 </label>
                 <div className=" bg-gray-100 rounded-full p-2 flex items-center justify-center ">
@@ -70,7 +70,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <button className="bg-gradient-to-r from-primary to-secondary text-white hover:scale-105 px-4 py-2 rounded-full duration-200 absolute -bottom-5 left-1/2 -translate-x-1/2">
+            <button className="bg-gradient-to-r from-primary to-secondary text-white hover:scale-105 px-4 py-2 rounded-full duration-200 absolute -bottom-12 left-1/2 -translate-x-1/2">
               Search Now
             </button>
           </div>

@@ -20,7 +20,7 @@ const PlaceCard = ({
           <img
             src={img}
             alt="No image"
-            className="mx-auto h-[220px] w-full object-cover transition duration-700 hover:skew-x-2 hover:scale-110"
+            className="mx-auto h-[220px] w-full object-cover transition duration-700"
           />
         </div>
 
@@ -36,7 +36,7 @@ const PlaceCard = ({
               <p>{type}</p>
             </div>
             <div>
-              <p className="text-2xl font-bold">${price}</p>
+              <p className="text-2xl font-bold">₱{price}</p>
             </div>
           </div>
         </div>
