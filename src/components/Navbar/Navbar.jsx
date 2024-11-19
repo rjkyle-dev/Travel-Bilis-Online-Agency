@@ -65,7 +65,7 @@ const Navbar = ({ handleOrderPopup }) => {
               </Link>
               <span className="title text-white">Online Agency</span>
             </div>
-            <div className="hidden md:block ml-[-13em]">
+            <div className="hidden md:block ml-[-5em]">
               <ul className="flex items-center gap-6 font-semibold">
                 <li className="py-4 hover:text-white">
                   <NavLink to="/" activeClassName="active">
@@ -87,7 +87,7 @@ const Navbar = ({ handleOrderPopup }) => {
                     About
                   </NavLink>
                 </li>
-                {/* <li className="group relative cursor-pointer">
+                <li className="group relative cursor-pointer">
                   <a
                     href="/"
                     className="flex h-[72px] items-center gap-[2px]"
@@ -111,7 +111,7 @@ const Navbar = ({ handleOrderPopup }) => {
                       ))}
                     </ul>
                   </div>
-                </li> */}
+                </li>
               </ul>
             </div>
             <div className="flex items-center gap-4">
