@@ -47,7 +47,7 @@ const About = () => {
                 <img
                   src={Juniville}
                   alt="Concha"
-                  className="w-36 h-36 object-cover rounded-full border-2 border-blue-600 hover:scale-105 transition duration-300 ease-in-out"
+                  className="rounded-full object-cover w-36 h-36 border-2 border-blue-600 hover:scale-105 transition duration-300 ease-in-out"
                 />
               </div>
             </div>
