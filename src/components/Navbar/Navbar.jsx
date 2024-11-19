@@ -47,7 +47,7 @@ const Navbar = ({ handleOrderPopup }) => {
   };
   return (
     <>
-      <nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md">
+      <nav className="fixed top-0 right-0 w-full z-50 bg-sky-400 backdrop-blur-sm text-black shadow-md">
         {/* <div className="bg-gradient-to-r from-primary to-secondary text-white ">
           <div className="container py-[2px] sm:block hidden">
             <div className="flex items-center justify-between">
@@ -56,32 +56,33 @@ const Navbar = ({ handleOrderPopup }) => {
             </div>
           </div>
         </div> */}
-        <div className="container py-3 sm:py-0">
-          <div className="flex justify-between items-center">
+
+        <div className="container py-3 sm:py-0 ">
+          <div className="flex justify-between items-center ">
             <div className="flex items-center xl:gap-4  font-bold xl:text-2xl xl:ml-[-4em]">
               <Link to={"/"} onClick={() => window.scrollTo(0, 0)}>
                 <img src={Logo} alt="" className="h-16" />
               </Link>
-              <span className="title">Online Agency</span>
+              <span className="title text-white">Online Agency</span>
             </div>
             <div className="hidden md:block ml-[-13em]">
               <ul className="flex items-center gap-6 font-semibold">
-                <li className="py-4">
+                <li className="py-4 hover:text-white">
                   <NavLink to="/" activeClassName="active">
                     Home
                   </NavLink>
                 </li>
-                <li className="py-4">
+                <li className="py-4 hover:text-white">
                   <NavLink to="/blogs" activeClassName="active">
                     Blogs
                   </NavLink>
                 </li>
-                <li className="py-4">
+                <li className="py-4 hover:text-white">
                   <NavLink to="/best-places" activeClassName="active">
                     Best Places
                   </NavLink>
                 </li>
-                <li className="py-4">
+                <li className="py-4 hover:text-white">
                   <NavLink to="/about" activeClassName="active">
                     About
                   </NavLink>
@@ -118,8 +119,7 @@ const Navbar = ({ handleOrderPopup }) => {
                 className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
                 onClick={() => {
                   handleOrderPopup();
-                }}
-              >
+                }}>
                 Book Now
               </button>
               {/* Mobile Hamburger icon */}

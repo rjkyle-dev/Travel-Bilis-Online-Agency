@@ -4,6 +4,6 @@
 
 @layer base {
   .active {
-    @apply text-primary;
+    color: aliceblue;
   }
 }
