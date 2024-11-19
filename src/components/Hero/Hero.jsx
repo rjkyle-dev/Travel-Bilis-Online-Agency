@@ -17,14 +17,14 @@ const Hero = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="300"
-              className="font-bold text-3xl">
+              className="font-bold text-3xl lg:mt-3">
               Search Your Destination
             </p>
           </div>
           <div
             data-aos="fade-up"
             data-aos-delay="600"
-            className="space-y-4 bg-sky-600 rounded-md p-4 relative">
+            className="space-y-4 bg-sky-600 rounded-md p-4 relative lg:top-5">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 py-3">
               <div>
                 <label htmlFor="destination" className="">
